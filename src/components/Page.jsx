@@ -57,8 +57,8 @@ function Page(props){
             <img src={manga.chapter[actualChapter].pages[actualPage]} alt={"Page de manga de "+ manga.title}/>
 
             <div className='page-switch switch'>
-                <button onClick={() => previousPage()}> <i class="fas fa-backward"></i> </button>
-                <button onClick={() => nextPage()}> <i class="fas fa-forward"></i> </button>
+                <button onClick={() => previousPage()}> <i className="fas fa-backward"></i> </button>
+                <button onClick={() => nextPage()}> <i className="fas fa-forward"></i> </button>
             </div>
 
             <div className='chapter-switch switch'>
