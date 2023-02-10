@@ -1,0 +1,32 @@
+.nav-header{
+    position: relative;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #373737;
+}
+
+.nav-header h1{
+    font-weight: bolder;
+    margin: 0;
+}
+
+.nav-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fcfbfb;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.modal{
+    position: absolute;
+    border: solid 3px #373737;
+    background-color: #fcfbfb;
+    border-radius: 0px 0px 5px 5px;
+}

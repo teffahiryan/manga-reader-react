@@ -1,0 +1,12 @@
+.div-read{
+    padding: 18px;
+}
+
+.div-read h2{
+    background-color: #373737;
+    padding: 8px;
+    margin: 0;
+    border-radius: 5px;
+    color: #fcfbfb;
+    text-align: center;
+}
