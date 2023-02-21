@@ -1,2 +1,3 @@
-# manga-reader-react
-Site de lecture de manga créé à l'aide de React.
+# Manga Dev React
+
+Site permettant la lecture de manga en ligne. Créé à l'aide de React.
