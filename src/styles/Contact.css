@@ -1,11 +1,18 @@
 .section-contact{
     font-size: 1.1em;
     color: #373737;
-    padding: 2%;
+    width: 90%;
+    margin:auto;
+}
+
+.section-contact>div{
+    width: 80%;
+    margin: auto;
 }
 
 .section-contact i{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: #8a8762;
 }
 
 .section-contact a{

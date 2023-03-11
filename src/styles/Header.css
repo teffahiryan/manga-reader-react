@@ -1,19 +1,33 @@
 .nav-header{
-    position: relative;
-    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-header>div:first-child{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background-color: #373737;
+    position: relative;
+    z-index: 2;
+    padding: 0px 18px;
 }
 
 .nav-header h1{
     font-weight: bolder;
     margin: 0;
+    color: #dfdcb2;
+    transition: color 0.3s;
+}
+
+.nav-header h1:hover{
+    color: #D9D375;
 }
 
 .nav-a{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     color: #fcfbfb;
@@ -22,11 +36,42 @@
     font-weight: bold;
     margin: 8px;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
-.modal{
-    position: absolute;
-    border: solid 3px #373737;
-    background-color: #fcfbfb;
-    border-radius: 0px 0px 5px 5px;
+.nav-a:hover{
+    color: #e1e1e1;
+}
+
+/* Category list */
+
+.category-list-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: solid 1px #b6b6b6;
+}
+
+.category-list-header>a{
+    color: #373737;
+    font-weight: bold;
+    margin: 8px;
+    transition: color 0.3s;
+}
+
+.category-list-header>a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/* RESPONSIVE */
+
+@media screen  and (max-width:600px){
+
+    .nav-header>div:first-child{
+        flex-direction: column;
+    }
+
 }

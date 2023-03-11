@@ -1,26 +1,26 @@
 import { Link } from 'react-router-dom'
 
-import Contact from './Contact';
+import SearchBar from './SearchBar';
 
 import '../styles/Header.css';
 
-function Header({isOpen, setIsOpen}){
+function Header(){
 
     return(
         <nav className="nav-header">
-            <Link className='nav-a' onClick={() => setIsOpen(false)} to="/"> <h1> MangaDev </h1> </Link>
-            {
-                isOpen ? 
-                    (<div> 
-                        <div className='nav-a' onClick={() => setIsOpen(false)}> Contact </div> 
-                        <div className='modal'> <Contact /> </div> 
-                    </div>
-                    )
-                    :
-                    (
-                        <div className='nav-a' onClick={() => setIsOpen(true)}> Contact </div>
-                    )
-            }
+            <div>
+                <Link className='nav-a' to="/"> <h1> MangaDev </h1> </Link>
+                <SearchBar />
+                <Link className='nav-a' to="/Contact"> Contact </Link> 
+            </div>
+            <div className='category-list-header'>
+                <Link to="/categorie/action"> ACTION </Link>
+                <Link to="/categorie/aventure"> AVENTURE </Link>
+                <Link to="/categorie/comedie"> COMEDIE </Link>
+                <Link to="/categorie/fantasy"> FANTASY </Link>
+                <Link to="/categorie/sport"> SPORT </Link>
+                <Link to="/categorie/drama"> DRAMA </Link>
+            </div>
         </nav>
     );
 }

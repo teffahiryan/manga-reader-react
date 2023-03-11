@@ -12,7 +12,7 @@ function Read(){
 
     return(
         <div className="div-read">
-            <h2> {getManga.name} </h2>
+            <h2 className='title1'> {getManga.name} </h2>
             <Page mangaChapter={chapternumber} manga={getManga} />
         </div>
     );
